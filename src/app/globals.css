@@ -3,25 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf9f7;
+  --foreground: #1e293b;
+  --accent: #3d5a80;
+  --muted: #87827a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Smooth transitions for interactive elements */
+@layer components {
+  .btn-primary {
+    @apply bg-slate-900 text-cream-100 px-8 py-4 rounded-sm font-medium
+           tracking-wide transition-all duration-300 ease-out
+           hover:bg-slate-800 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply border border-slate-900 text-slate-900 px-8 py-4 rounded-sm
+           font-medium tracking-wide transition-all duration-300 ease-out
+           hover:bg-slate-900 hover:text-cream-100;
+  }
+
+  .section-padding {
+    @apply px-6 py-24 md:px-12 lg:px-24 xl:px-32;
+  }
+
+  .heading-display {
+    @apply text-slate-900 font-light tracking-tight;
+  }
+
+  .text-body {
+    @apply text-warm-600 leading-relaxed;
   }
 }
