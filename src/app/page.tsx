@@ -28,9 +28,9 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <button className="btn-primary text-lg">
+          <a href="https://app.jabrium.com" className="btn-primary text-lg inline-block">
             Start with your voice
-          </button>
+          </a>
         </div>
 
         {/* Scroll indicator */}
@@ -246,7 +246,7 @@ export default function Home() {
 
           {/* Voice Recording Button Placeholder */}
           <div className="flex flex-col items-center gap-6">
-            <button className="w-24 h-24 rounded-full bg-slate-900 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
+            <a href="https://app.jabrium.com" className="w-24 h-24 rounded-full bg-slate-900 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
               <svg
                 className="w-10 h-10 text-cream-100 transition-transform group-hover:scale-110"
                 fill="currentColor"
@@ -255,7 +255,7 @@ export default function Home() {
                 <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
                 <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
               </svg>
-            </button>
+            </a>
             <span className="text-warm-500 text-sm tracking-wide">
               Tap to record your idea
             </span>
