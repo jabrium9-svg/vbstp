@@ -28,7 +28,7 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <a href="https://app.jabrium.com" className="btn-primary text-lg inline-block">
+          <a href="https://app.jabrium.com?source=vbstp&ref=website" className="btn-primary text-lg inline-block">
             Start with your voice
           </a>
         </div>
@@ -246,7 +246,7 @@ export default function Home() {
 
           {/* Voice Recording Button Placeholder */}
           <div className="flex flex-col items-center gap-6">
-            <a href="https://app.jabrium.com" className="w-24 h-24 rounded-full bg-slate-900 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
+            <a href="https://app.jabrium.com?source=vbstp&ref=website" className="w-24 h-24 rounded-full bg-slate-900 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
               <svg
                 className="w-10 h-10 text-cream-100 transition-transform group-hover:scale-110"
                 fill="currentColor"
